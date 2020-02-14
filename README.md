@@ -1,7 +1,7 @@
 # ColumboCrud
 
-The code sample from the fourth in a series of posts performing Create, Read, Update, Delete (CRUD) operations from an Angular app
+The code sample from the fifth in a series of posts performing Create, Read, Update, Delete (CRUD) operations from an Angular app
 
-This code has a focus on the U in CRUD; Update
+This code has a focus on the D in CRUD; Delete
 
-Blog post can be found here: https://oraclefrontovik.com/2020/02/07/angular-crud-4:-update/
+Blog post can be found here: https://oraclefrontovik.com/2020/02/14/angular-crud-5:-delete/
