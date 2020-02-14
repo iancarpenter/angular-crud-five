@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <button type="button" class="btn btn-primary" (click)="toCreateVillain()">Create</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Episode</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let villain of villains">
+            <tr>
+                <th scope="row">{{ villain.id }}</th>
+                <td  class="w-25 p-3">{{ villain.name }}</td>
+                <td  class="w-25 p-3">{{ villain.episode }}</td>
+                <td><button type="button" class="btn btn-primary" (click)="toUpdateVillain(villain.id, villain.name, villain.episode)">Edit</button></td>
+                <td><button type="button" class="btn btn-danger" (click)="deleteVillain(villain.id, villain.name, villain.episode)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
