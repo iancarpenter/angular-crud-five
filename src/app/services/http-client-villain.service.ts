@@ -8,7 +8,9 @@ import { VillainsService } from './villain.service';
 
 const cudOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})};
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 
 export class HttpClientVillainService extends VillainsService {
   
