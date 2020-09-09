@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <button type="button" class="btn btn-primary" (click)="toCreateVillain()">Create</button>
+            <button type="button" class="btn btn-primary btn-lg" (click)="toCreateVillain()">Create</button>
         </div>
     </div>
 </div>
@@ -19,7 +19,7 @@
                 <th scope="row">{{ villain.id }}</th>
                 <td  class="w-25 p-3">{{ villain.name }}</td>
                 <td  class="w-25 p-3">{{ villain.episode }}</td>
-                <td><button type="button" class="btn btn-primary" (click)="toUpdateVillain(villain.id, villain.name, villain.episode)">Edit</button></td>
+                <td><button type="button" class="btn btn-success" (click)="toUpdateVillain(villain.id, villain.name, villain.episode)">Edit</button></td>
                 <td><button type="button" class="btn btn-danger" (click)="deleteVillain(villain.id, villain.name, villain.episode)">Delete</button></td>
             </tr>
         </tbody>
